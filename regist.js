@@ -17,4 +17,4 @@ function show() {
     }
 }
 
-console.log("초기 데이터가 로드되었습니다:", bookData); 
+console.log("초기 데이터가 로드되었습니다:", bookData);  
