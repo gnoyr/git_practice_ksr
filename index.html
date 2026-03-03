@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 관리 시스템</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <h1>도서 관리</h1>
+
+    <section id="regist-section"></section>
+        <h3>도서 등록</h3>
+        <input type="text" id="input-title" placeholder="도서 제목">
+        <input type="text" id="input-author" placeholder="저자">
+        <button id="btn-regist">등록하기</button>
+    </section>
+
+    <hr>
+
+    <section id="list-section">
+        <h3>도서 목록</h3>
+        <ul id="book-list-container">
+            <li>등록된 도서가 없습니다.</li>
+        </ul>
+    </section>
+
+    <script>
+        const bookData = [
+            { id: 1, title: "어린 왕자", author: "생텍쥐페리" },
+            { id: 2, title: "자바스크립트 완벽 가이드", author: "데이비드 플래너건" },
+            { id: 3, title: "해리 포터와 마법사의 돌", author: "J.K. 롤링" }
+        ];
+
+        console.log("초기 데이터가 로드되었습니다:", bookData);
+    </script>
+    
+    <script src="regist.js"></script>
+    <script src="list.js"></script>
+
+</body>
+</html>
